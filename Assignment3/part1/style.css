@@ -28,7 +28,7 @@ body {
   
   a:hover {
     
-    text-decoration: none;
+    color: green;
   }
 .details{
     border: 5px solid purple;
