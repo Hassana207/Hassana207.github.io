@@ -16,6 +16,7 @@ body {
   }
   
   .job-title {
+
     color: #999999;
     font-weight: bold;
   }
@@ -26,6 +27,13 @@ body {
   }
   
   a:hover {
+    
     text-decoration: none;
   }
+.details{
+    border: 5px solid purple;
+    background-color: #eeeeee;
+    padding: 20px; 
+    
+}
   
