@@ -4,12 +4,15 @@ html {
 .box {
     width: 200px;                
     height: 200px;               
-    border: 5px solid black;  
+    border: 1px solid darkred;  
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;  
     font-size: 1.125rem; /* 1 rem = 16px by default so 17px = 17/16 px = 1.125rem */
     background-color: red;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    border-radius: 7px;
     
 }
