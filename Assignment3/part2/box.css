@@ -14,5 +14,12 @@ html {
     color: white;
     text-shadow: 5px 5px 5px black;
     border-radius: 7px;
-    
+    background: linear-gradient(
+     to bottom right,  
+        rgba(0, 0, 0, 0),    
+        rgba(0, 0, 0, 0.2) 30%
+        rgba(0, 0, 0, 0.2) 100%  
+
+);
+
 }
