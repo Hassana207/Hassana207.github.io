@@ -9,7 +9,7 @@ html {
     justify-content: center;
     align-items: center;
     margin: 0 auto;  
-    
-                 
+    font-size: 1.125rem; /* 1 rem = 16px by default so 17px = 17/16 px = 1.125rem */
+    background-color: red;
     
 }
