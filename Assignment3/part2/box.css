@@ -1,10 +1,15 @@
 html {
     font-family: sans-serif;
   }
-  .box {
+.box {
     width: 200px;                
     height: 200px;               
-    border: 5px solid black;     
+    border: 5px solid black;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;  
+    
                  
     
 }
