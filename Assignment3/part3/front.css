@@ -69,3 +69,37 @@
   #p1,#p2{
     text-indent: 20px;
   }
+  a{
+    color: #a66;
+    text-decoration: underline;
+  }
+  a:hover{
+
+    color: #a66;
+    text-decoration-line: none;
+  }
+  a:visited{
+    color: #a66;
+
+  }
+  a:focus{
+    color: #a66;
+    text-decoration-line: none;
+    outline:none;
+
+  }
+  a:active{
+    color: tomato;
+    text-decoration-style: dotted;
+    text-decoration-line:none ;
+    font-style: italic;
+    font-weight: bold;
+    
+  }
+
+  a[href^="http"]:after {
+    content: " [↗]"; 
+    margin-left: 5px; 
+    font-size: 10px; 
+    color: #a66; 
+}
