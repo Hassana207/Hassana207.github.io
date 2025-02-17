@@ -46,11 +46,26 @@
 
   body{
         font-family: 'Lora', sans-serif;
+        font-size: 10px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+
         
         
   }
   h1,h2{
     font-family: "Lexend Giga", sans-serif;
+    letter-spacing: 3px;
+    
   }
-  
-  
+  h1{
+    font-size: 35px;
+    text-align: center;
+  }
+  h2{
+    font-size:20px ;
+  }
+  #p1,#p2{
+    text-indent: 20px;
+  }
