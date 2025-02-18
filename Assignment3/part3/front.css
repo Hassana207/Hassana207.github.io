@@ -98,10 +98,13 @@
   }
 
   a[href^="http"]:after {
-    content: " [↗]"; 
+    content: " ";
+    display: inline; 
     margin-left: 5px; 
     font-size: 10px; 
     color: #a66; 
+    background-image: url("external-link-52.png");
+    background-size: contain;
 }
 ul,ol{
     line-height: 20px;
