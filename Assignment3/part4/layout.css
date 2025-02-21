@@ -29,7 +29,7 @@ body {
   nav {
     background-color: #000;
     padding: .5em;
-    position: fixed ;
+    position: sticky ;
     width: 100%;
     top: 0;
     left: 0;
@@ -40,7 +40,9 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: inline; 
+    display: inline;
+    display: flex;
+    justify-content: space-between; 
     
   }
   
@@ -60,7 +62,6 @@ body {
       width: 200px;
   }
 nav li {
-  padding: 70px ;
   display: inline;
 
 }
