@@ -74,6 +74,10 @@ article{
 }
 aside{
   flex: 1;
-
+}
+.photos{
+  display: grid;
+  grid-template-columns:  140px 140px;
+  gap:1px
 }
   
