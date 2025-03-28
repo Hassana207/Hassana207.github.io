@@ -5,6 +5,8 @@ const ctx = canvas.getContext("2d");
 
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
+const ballCount = document.querySelector("p");
+let count = 25;
 
 // function to generate random number
 
@@ -140,6 +142,8 @@ class EvilCircle extends Shape{
     
           if (distance < this.size + ball.size) {
             ball.exists = false;
+            count--
+            updateBallCount()
           }
         }
       }
@@ -170,6 +174,10 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+function updateBallCount() {
+  ballCount.textContent = `Balls count: ${count}`;
+}
+
 
 
 const evilCircle = new EvilCircle(random(0 + 12, width - 12), random(0 + 12, height - 12));
@@ -194,3 +202,5 @@ function loop() {
 }
 
 loop();
+
+
