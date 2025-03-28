@@ -130,6 +130,7 @@ class EvilCircle extends Shape{
       }
     }
 
+
     collisionDetect() {
       for (const ball of balls) {
         if (ball.exists) {
@@ -144,9 +145,10 @@ class EvilCircle extends Shape{
       }
     }
     
-  
     
   }
+
+
   
 
 
@@ -168,15 +170,25 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+
+
+const evilCircle = new EvilCircle(random(0 + 12, width - 12), random(0 + 12, height - 12));
+
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
-    ball.draw();
-    ball.update();
-    ball.collisionDetect();
+    if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
   }
+
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
 
   requestAnimationFrame(loop);
 }
